@@ -37,7 +37,7 @@ if __name__ == "__main__":
     for line in lines:
         wlog('src: {}'.format(line.strip()))
         line = line.strip()
-        trans = translate(line, 'en', 'zh', '39d906d301b6e2a3454bb0fb9a17edca')
+        trans = translate(line, 'en', 'zh', '....')
         try:
             trans = trans.decode('utf-8')
         except:
