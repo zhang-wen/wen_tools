@@ -68,7 +68,7 @@ def merge_and_shuffle_json(file1, file2, output_file):
 
     # 写入合并后的 JSON 文件
     with open(output_file, 'w') as outfile:
-        json.dump(merged_data, outfile, indent=2)
+        json.dump(merged_data, outfile, indent=2, ensure_ascii=False)
 
     # 打印统计结果
     wlog('Number of ids in file1: {}'.format(id_counts['file1']))
